@@ -21,6 +21,19 @@ body{
   padding: 1em;
 }
 
+.bg{
+  min-width: 100%;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.container{
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
 .head{
   display:flex;
   gap: 0.5em;

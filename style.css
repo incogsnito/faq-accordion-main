@@ -1,0 +1,51 @@
+*,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Worksans" ;
+  src: url("./faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf");
+
+}
+
+
+body{
+  min-height: 100vh;
+  justify-content:center;
+  font-family: "Worksans", sans-serif;
+  align-items:center;
+  display:flex;
+  padding: 1em;
+}
+
+.head{
+  display:flex;
+  gap: 0.5em;
+}
+
+.info_container{
+  margin-block: 0.5em;
+}
+
+img{
+  align-self: flex-start;
+}
+
+.info_head{
+  display:flex;
+  align-items:center;
+  gap: 1em;
+}
+
+.add{
+  cursor:pointer;
+}
+
+
+
+.hidden{
+  display:none;
+}

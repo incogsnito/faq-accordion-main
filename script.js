@@ -1,12 +1,9 @@
-const add = document.querySelectorAll(".add");
 
-const info = document.querySelectorAll(".info");
+document.addEventListener("click", (e) => {
+  if (!e.target.matches(".add")) return;
 
-add.forEach((add)=> {
-  add.addEventListener('click', (e)=>{
-    infoSelect = e.target;
-    info.forEach((info) =>{
-      info.classList.toggle('hidden');
-    })
-  })
-})
+  const container = e.target.closest(".info_container");
+  const info = container.querySelector(".info");
+
+  info.classList.toggle("hidden");
+});

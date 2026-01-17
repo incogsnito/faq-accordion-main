@@ -1,116 +1,116 @@
 *,
 *::after {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Worksans" ;
+  font-family: "Worksans";
   src: url("./faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Worksans" ;
+  font-family: "Worksans";
   src: url("./faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Worksans" ;
+  font-family: "Worksans";
   src: url("./faq-accordion-main/assets/fonts/WorkSans-VariableFont_wght.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
-
-
-body{
+body {
   min-height: 100vh;
-  justify-content:center;
+  justify-content: center;
   font-family: "Worksans", sans-serif;
-  align-items:center;
-  display:flex;
+  align-items: center;
   padding: 1em;
+  display: flex;
   background: hsl(275, 100%, 97%);
-
 }
 
-.bg{
-  min-width: 100%;
+.bg {
+  width:100%;
   top: 0;
   z-index: 1;
   position: absolute;
 }
 
-.desktop{
-  display:none;
+.desktop {
+  display: none;
 }
 
-.container{
+
+
+.container {
   position: relative;
-  border-radius: 0.5em;
+  border-radius: 1em;
   z-index: 2;
   padding: 1em;
   background: white;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), 0px 4px 4px rgba(0, 0, 0, 0.027), 0px 8px 8px rgba(0, 0, 0, 0.027) ;
+  box-shadow:
+    0px 2px 2px rgba(0, 0, 0, 0.027),
+    0px 4px 4px rgba(0, 0, 0, 0.027),
+    0px 8px 8px rgba(0, 0, 0, 0.027);
 }
 
-.head{
-  display:flex;
+.head {
+  display: flex;
   gap: 0.5em;
 }
 
-.info_container{
+.info_container {
   margin-block: 1em;
   border-bottom: 1px solid hsl(275, 100%, 97%);
   padding-block-end: 1em;
 }
 
-.info_container:nth-last-child{
+.info_container:nth-last-child {
   border: none;
 }
 
-img{
+img {
   align-self: flex-start;
 }
 
-.info_head{
-  display:flex;
+.info_head {
+  display: flex;
   margin-block: 1em;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   gap: 1em;
 }
 
-.info{
+.info {
   color: hsl(292, 16%, 49%);
-
-
 }
-.add{
-  cursor:pointer;
+.add {
+  cursor: pointer;
 }
-.minus{
-  cursor: pointer
+.minus {
+  cursor: pointer;
 }
 
-.hidden{
-  display:none;
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
-  .container{
+  .container {
     max-width: 600px;
   }
 
-  .mobile{
-    display:none;
+  .mobile {
+    display: none;
   }
 
-  .desktop{
-    display:block;
+  .desktop {
+    display: inline;
   }
 }

@@ -70,7 +70,7 @@ body{
 }
 
 .info_container:nth-last-child{
-  border-bottom: none;
+  border: none;
 }
 
 img{
@@ -80,6 +80,7 @@ img{
 .info_head{
   display:flex;
   margin-block: 1em;
+  justify-content: space-between;
   align-items:center;
   gap: 1em;
 }

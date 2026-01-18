@@ -36,7 +36,7 @@ body {
 }
 
 .bg {
-  width:100%;
+  width: 100%;
   top: 0;
   z-index: 1;
   position: absolute;
@@ -46,7 +46,11 @@ body {
   display: none;
 }
 
-h3{
+h1{
+  color:hsl(292, 42%, 14%);
+  font-size: 3em;
+}
+h3 {
   font-weight: 600;
 }
 
@@ -77,9 +81,6 @@ h3{
   border: none;
 }
 
-img {
-  align-self: flex-start;
-}
 
 .info_head {
   display: flex;
@@ -91,10 +92,10 @@ img {
 
 .info {
   color: hsl(292, 16%, 49%);
+  
 }
 .add {
   cursor: pointer;
-
 }
 .minus {
   cursor: pointer;
@@ -104,7 +105,12 @@ img {
   display: none;
 }
 
-
+.info.hidden {
+  opacity: 0;
+  scale: 0;
+  height: 0;
+  display: none;
+}
 
 @media screen and (min-width: 700px) {
   .container {
